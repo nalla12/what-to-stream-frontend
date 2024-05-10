@@ -1,27 +1,46 @@
-# WhatToStreamFrontend
+# What To Stream Frontend
+An Angular web app for quick and easy recommendations of which movies or series to watch on streaming services with filters and sorting based on IMDB and meta score.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Requirement Specification
+- Filters
+  - Save different presets (to localStorage)
+  - Toggle movies or series/shows
+  - Choose country
+    - Automatic detection based on IP address location
+  - Genre
+  - Score
+  - Streaming service
+    - Netflix, Disney+, HBO Max, Amazon Prime etc.
+- Sorting
+  - By score
+  - Most popular
+  - Be release year
+  - Alphabetical
+  - Random (button to shuffle)
+  - Group by genre, year etc. maybe?
+- Search
+  - Title
+  - Genre
+- Movie / series page
+  - Name, genre, release year
+  - Picture
+  - Available on which streaming services
+  - Rating on IMDB, Metascore, Rotten Tomatoes
+  - Link to open on IMDB
+  - Synopsis
+  - Click to toggle as "seen" (movie) / "seen all" (series)
+  - Quick save button to a "Favourites" list
+  - Save to different lists
+    - Shortcut to create a new list
+- User profile
+  - Login (via Firebase?)
+  - Perhaps a temporary solution that saves lists to localStorage
+  - Features:
+      - Create new list
+        - Suggest name, e.g. "Horror", "Sci-Fi", "Classics"
+      - Rename list
+      - Delete list
+      - Duplicate list
+      - Share list
+      - Reorder items
+      - Remove items
