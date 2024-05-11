@@ -17,7 +17,7 @@ An Angular web app for quick and easy recommendations of which movies or series 
   - Be release year
   - Alphabetical
   - Random (button to shuffle)
-  - Group by genre, year etc. maybe?
+  - Group by streaming service, genre, year
 - Search
   - Title
   - Genre
