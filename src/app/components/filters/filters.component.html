@@ -1,0 +1,37 @@
+<mat-button-toggle-group
+    name="category"
+    aria-label="Category"
+    #group="matButtonToggleGroup"
+    [value]="selectedCategory"
+    (change)="onCategoryChange(group.value)"
+>
+    @for (category of categories; track category) {
+        <mat-button-toggle [value]="category">{{ category | titlecase }}</mat-button-toggle>
+    }
+</mat-button-toggle-group>
+
+<mat-form-field>
+    <mat-label>Genre</mat-label>
+    <mat-select multiple
+        aria-label="Genre"
+        #select="matSelect"
+        (selectionChange)="onGenreChange(select.value)"
+    >
+        @for (genre of genres; track genre) {
+            <mat-option [value]="genre">{{ genre | titlecase }}</mat-option>
+        }
+    </mat-select>
+</mat-form-field>
+
+<div class="imdb-score-label-container">
+    <label class="imdb-score-label">IMDB Score</label>
+    <label class="imdb-score-value-label">{{slider.value}}</label>
+</div>
+<mat-slider
+    [max]="imdbScore.max"
+    [min]="imdbScore.min"
+    [step]="imdbScore.step"
+    [discrete]="imdbScore.thumbLabel"
+    [showTickMarks]="imdbScore.showTicks">
+    <input #slider matSliderThumb [value]="imdbScore.value">
+</mat-slider>

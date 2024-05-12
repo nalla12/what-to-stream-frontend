@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.mat-button-toggle {
+    flex-grow: 1;
+}
+
+.imdb-score-label-container {
+    display: flex;
+    justify-content: space-between;
+}

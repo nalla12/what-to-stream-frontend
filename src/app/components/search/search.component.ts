@@ -13,5 +13,4 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styleUrl: './search.component.css'
 })
 export class SearchComponent {
-    genres: string[] = ['horror', 'thriller', 'drama'];
 }

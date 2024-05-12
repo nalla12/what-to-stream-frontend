@@ -2,11 +2,3 @@
     <mat-label>Title</mat-label>
     <input matInput>
 </mat-form-field>
-<mat-form-field>
-    <mat-label>Genre</mat-label>
-    <mat-select multiple>
-        @for (genre of genres; track genre) {
-            <mat-option [value]="genre">{{genre}}</mat-option>
-        }
-    </mat-select>
-</mat-form-field>

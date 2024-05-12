@@ -4,7 +4,7 @@ An Angular web app for quick and easy recommendations of which movies or series 
 ## Requirement Specification
 - Filters
   - Save different presets (to localStorage)
-  - Toggle movies or series/shows
+  - Toggle category: movies or TV series/TV shows
   - Choose country
     - Automatic detection based on IP address location
   - Genre
