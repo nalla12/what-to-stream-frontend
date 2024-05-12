@@ -1,12 +1,12 @@
 <mat-button-toggle-group
-    name="category"
-    aria-label="Category"
+    name="show-type"
+    aria-label="Show Type"
     #group="matButtonToggleGroup"
-    [value]="selectedCategory"
-    (change)="onCategoryChange(group.value)"
+    [value]="selectedShowType"
+    (change)="onShowTypeChange(group.value)"
 >
-    @for (category of categories; track category) {
-        <mat-button-toggle [value]="category">{{ category | titlecase }}</mat-button-toggle>
+    @for (type of showType; track type) {
+        <mat-button-toggle [value]="type">{{ type | titlecase }}</mat-button-toggle>
     }
 </mat-button-toggle-group>
 

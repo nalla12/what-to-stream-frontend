@@ -3,7 +3,7 @@ import {MatFormField, MatLabel} from '@angular/material/form-field';
 import {MatOption} from '@angular/material/autocomplete';
 import {MatSelect} from '@angular/material/select';
 import {MatButtonToggle, MatButtonToggleGroup} from '@angular/material/button-toggle';
-import {CATEGORIES, GENRES} from '../../constants';
+import {GENRES, SHOW_TYPES} from '../../constants';
 import {TitleCasePipe} from '@angular/common';
 import {MatSlider, MatSliderThumb} from '@angular/material/slider';
 
@@ -25,10 +25,10 @@ import {MatSlider, MatSliderThumb} from '@angular/material/slider';
     styleUrl: './filters.component.css'
 })
 export class FiltersComponent implements OnInit {
-    categories: string[] = CATEGORIES;
+    showType: string[] = SHOW_TYPES;
     genres: string[] = GENRES;
     selectedGenre: string = '';
-    selectedCategory: string = '';
+    selectedShowType: string = '';
     imdbScore = {
         max: 10,
         min: 1,
@@ -39,12 +39,12 @@ export class FiltersComponent implements OnInit {
     }
 
     ngOnInit(){
-        this.selectedCategory = this.categories[0];
+        this.selectedShowType = this.showType[0];
         this.selectedGenre = this.genres[0];
     }
 
-    public onCategoryChange(val: string) {
-        this.selectedCategory = val;
+    public onShowTypeChange(val: string) {
+        this.selectedShowType = val;
         console.log(val);
     }
 

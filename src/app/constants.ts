@@ -21,7 +21,7 @@ export const GENRES = [
     "western",
 ];
 
-export const CATEGORIES = [
-    "movies",
+export const SHOW_TYPES = [
+    "movie",
     "series",
 ]

@@ -1,0 +1,1260 @@
+{
+    "countryCode": "dk",
+    "name": "Denmark",
+    "services": [
+        {
+            "id": "curiosity",
+            "name": "Curiosity Stream",
+            "homePage": "https://curiositystream.com/",
+            "themeColorCode": "#eea83d",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/curiosity/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/curiosity/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/curiosity/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        },
+        {
+            "id": "netflix",
+            "name": "Netflix",
+            "homePage": "https://www.netflix.com",
+            "themeColorCode": "#E50914",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/netflix/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/netflix/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/netflix/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        },
+        {
+            "id": "prime",
+            "name": "Prime Video",
+            "homePage": "https://www.primevideo.com",
+            "themeColorCode": "#00A8E1",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/prime/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/prime/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/prime/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        },
+        {
+            "id": "disney",
+            "name": "Disney+",
+            "homePage": "https://www.disneyplus.com/",
+            "themeColorCode": "#01137c",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/disney/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/disney/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/disney/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        },
+        {
+            "id": "hbo",
+            "name": "HBO Max",
+            "homePage": "https://play.hbomax.com/",
+            "themeColorCode": "#000000",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/hbo/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/hbo/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/hbo/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        },
+        {
+            "id": "apple",
+            "name": "Apple TV",
+            "homePage": "https://tv.apple.com/dk",
+            "themeColorCode": "#000000",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/apple/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/apple/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/apple/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": true,
+                "buy": true,
+                "rent": true,
+                "free": false,
+                "subscription": true
+            },
+            "addons": [
+                {
+                    "id": "tvs.sbd.1000299",
+                    "name": "BET+",
+                    "homePage": "https://tv.apple.com/us/channel/bet/tvs.sbd.1000299",
+                    "themeColorCode": "#CC00CC",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000395",
+                    "name": "Hallmark Movies Now",
+                    "homePage": "https://tv.apple.com/us/channel/hallmark-movies-now/tvs.sbd.1000395",
+                    "themeColorCode": "#563D82",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000543",
+                    "name": "ViX",
+                    "homePage": "https://tv.apple.com/us/channel/vix/tvs.sbd.1000543",
+                    "themeColorCode": "#666666",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10081",
+                    "name": "PBS KIDS Video",
+                    "homePage": "https://tv.apple.com/us/channel/pbs-kids-video/tvs.sbd.10081",
+                    "themeColorCode": "#E5296B",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10100",
+                    "name": "DisneyNOW",
+                    "homePage": "https://tv.apple.com/us/channel/disneynow/tvs.sbd.10100",
+                    "themeColorCode": "#C40431",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10420",
+                    "name": "MTV",
+                    "homePage": "https://tv.apple.com/us/channel/mtv/tvs.sbd.10420",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11361",
+                    "name": "BBC America",
+                    "homePage": "https://tv.apple.com/us/channel/bbc-america/tvs.sbd.11361",
+                    "themeColorCode": "#00041F",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12962",
+                    "name": "Prime Video",
+                    "homePage": "https://tv.apple.com/dk/channel/prime-video/tvs.sbd.12962",
+                    "themeColorCode": "#1a98FF",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.9050",
+                    "name": "HBO Max",
+                    "homePage": "https://tv.apple.com/dk/channel/hbo-max/tvs.sbd.9050",
+                    "themeColorCode": "#241450",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10000",
+                    "name": "Hulu",
+                    "homePage": "https://tv.apple.com/us/channel/hulu/tvs.sbd.10000",
+                    "themeColorCode": "#29A869",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.10000.png",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000003",
+                    "name": "Boomerang",
+                    "homePage": "https://tv.apple.com/us/channel/boomerang/tvs.sbd.1000003",
+                    "themeColorCode": "#7432FC",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000272",
+                    "name": "MGM+",
+                    "homePage": "https://tv.apple.com/us/channel/mgm/tvs.sbd.1000272",
+                    "themeColorCode": "#9D7F2C",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10080",
+                    "name": "PBS Video",
+                    "homePage": "https://tv.apple.com/us/channel/pbs-video/tvs.sbd.10080",
+                    "themeColorCode": "#2638C4",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000208",
+                    "name": "Sundance Now",
+                    "homePage": "https://tv.apple.com/us/channel/sundance-now/tvs.sbd.1000208",
+                    "themeColorCode": "#1c2238",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000249",
+                    "name": "MUBI",
+                    "homePage": "https://tv.apple.com/dk/channel/mubi/tvs.sbd.1000249",
+                    "themeColorCode": "#041383",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000355",
+                    "name": "MHz Choice",
+                    "homePage": "https://tv.apple.com/us/channel/mhz-choice/tvs.sbd.1000355",
+                    "themeColorCode": "#AC1F2D",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000362",
+                    "name": "Hallmark Movies Now",
+                    "homePage": "https://tv.apple.com/us/channel/hallmark-movies-now/tvs.sbd.1000362",
+                    "themeColorCode": "#573C81",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000498",
+                    "name": "AMC+",
+                    "homePage": "https://tv.apple.com/us/channel/amc/tvs.sbd.1000498",
+                    "themeColorCode": "#0E1623",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000206",
+                    "name": "Shudder",
+                    "homePage": "https://tv.apple.com/us/channel/shudder/tvs.sbd.1000206",
+                    "themeColorCode": "#2F3D53",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000231",
+                    "name": "STARZ",
+                    "homePage": "https://tv.apple.com/us/channel/starz/tvs.sbd.1000231",
+                    "themeColorCode": "#006576",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000257",
+                    "name": "UP Faith & Family",
+                    "homePage": "https://tv.apple.com/us/channel/up-faith--family/tvs.sbd.1000257",
+                    "themeColorCode": "#444443",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000371",
+                    "name": "Peacock",
+                    "homePage": "https://tv.apple.com/us/channel/peacock/tvs.sbd.1000371",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10220",
+                    "name": "NBC",
+                    "homePage": "https://tv.apple.com/us/channel/nbc/tvs.sbd.10220",
+                    "themeColorCode": "#4078D0",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10640",
+                    "name": "E!",
+                    "homePage": "https://tv.apple.com/us/channel/e/tvs.sbd.10640",
+                    "themeColorCode": "#0089A8",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12381",
+                    "name": "Sling TV",
+                    "homePage": "https://tv.apple.com/us/channel/sling-tv/tvs.sbd.12381",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12442",
+                    "name": "Pluto TV",
+                    "homePage": "https://tv.apple.com/dk/channel/pluto-tv/tvs.sbd.12442",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.12442/light-theme.png",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.12442/dark-theme.png",
+                        "whiteImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.12442/white.png"
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000023",
+                    "name": "Viki",
+                    "homePage": "https://tv.apple.com/us/channel/viki/tvs.sbd.1000023",
+                    "themeColorCode": "#0c9bff",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10282",
+                    "name": "Food Network",
+                    "homePage": "https://tv.apple.com/us/channel/food-network/tvs.sbd.10282",
+                    "themeColorCode": "#c41f40",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10664",
+                    "name": "Syfy",
+                    "homePage": "https://tv.apple.com/us/channel/syfy/tvs.sbd.10664",
+                    "themeColorCode": "#635762",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11222",
+                    "name": "Cartoon Network",
+                    "homePage": "https://tv.apple.com/us/channel/cartoon-network/tvs.sbd.11222",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11580",
+                    "name": "Animal Planet",
+                    "homePage": "https://tv.apple.com/us/channel/animal-planet/tvs.sbd.11580",
+                    "themeColorCode": "#0073ff",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12740",
+                    "name": "Acorn TV",
+                    "homePage": "https://tv.apple.com/us/channel/acorn-tv/tvs.sbd.12740",
+                    "themeColorCode": "#0B1733",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000030",
+                    "name": "Philo",
+                    "homePage": "https://tv.apple.com/us/channel/philo/tvs.sbd.1000030",
+                    "themeColorCode": "#0C92F3",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.1000030.png",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000051",
+                    "name": "BritBox",
+                    "homePage": "https://tv.apple.com/us/channel/britbox/tvs.sbd.1000051",
+                    "themeColorCode": "#00202b",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000211",
+                    "name": "Tastemade",
+                    "homePage": "https://tv.apple.com/us/channel/tastemade/tvs.sbd.1000211",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000246",
+                    "name": "Lionsgate+",
+                    "homePage": "https://tv.apple.com/dk/channel/lionsgate/tvs.sbd.1000246",
+                    "themeColorCode": "#006576",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000415",
+                    "name": "BBC Select",
+                    "homePage": "https://tv.apple.com/us/channel/bbc-select/tvs.sbd.1000415",
+                    "themeColorCode": "#8FB79D",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000496",
+                    "name": "Up Faith and Family",
+                    "homePage": "https://tv.apple.com/us/channel/up-faith-and-family/tvs.sbd.1000496",
+                    "themeColorCode": "#282828",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10120",
+                    "name": "Paramount+",
+                    "homePage": "https://tv.apple.com/us/channel/paramount/tvs.sbd.10120",
+                    "themeColorCode": "#1764FF",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10642",
+                    "name": "Telemundo",
+                    "homePage": "https://tv.apple.com/us/channel/telemundo/tvs.sbd.10642",
+                    "themeColorCode": "#1F2127",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11360",
+                    "name": "BET",
+                    "homePage": "https://tv.apple.com/us/channel/bet/tvs.sbd.11360",
+                    "themeColorCode": "#E05B4E",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12040",
+                    "name": "Viaplay",
+                    "homePage": "https://tv.apple.com/dk/channel/viaplay/tvs.sbd.12040",
+                    "themeColorCode": "#FE365F",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.13160",
+                    "name": "Tubi TV",
+                    "homePage": "https://tv.apple.com/us/channel/tubi-tv/tvs.sbd.13160",
+                    "themeColorCode": "#10141F",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.3000",
+                    "name": "Apple TV",
+                    "homePage": "https://tv.apple.com/dk/channel/apple-tv/tvs.sbd.3000",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000032",
+                    "name": "Funimation",
+                    "homePage": "https://tv.apple.com/us/channel/funimation/tvs.sbd.1000032",
+                    "themeColorCode": "#5B0BB5",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000230",
+                    "name": "Paramount+",
+                    "homePage": "https://tv.apple.com/us/channel/paramount/tvs.sbd.1000230",
+                    "themeColorCode": "#1764FF",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11120",
+                    "name": "The CW",
+                    "homePage": "https://tv.apple.com/us/channel/the-cw/tvs.sbd.11120",
+                    "themeColorCode": "#2BA9A5",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12980",
+                    "name": "Red Bull TV",
+                    "homePage": "https://tv.apple.com/us/channel/red-bull-tv/tvs.sbd.12980",
+                    "themeColorCode": "#001E3C",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000212",
+                    "name": "Acorn TV",
+                    "homePage": "https://tv.apple.com/us/channel/acorn-tv/tvs.sbd.1000212",
+                    "themeColorCode": "#053E3A",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000227",
+                    "name": "Curiosity Stream",
+                    "homePage": "https://tv.apple.com/dk/channel/curiosity-stream/tvs.sbd.1000227",
+                    "themeColorCode": "#EEA83D",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000383",
+                    "name": "AMC+",
+                    "homePage": "https://tv.apple.com/us/channel/amc/tvs.sbd.1000383",
+                    "themeColorCode": "#0E1623",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10180",
+                    "name": "ABC",
+                    "homePage": "https://tv.apple.com/us/channel/abc/tvs.sbd.10180",
+                    "themeColorCode": "#0A1320",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10520",
+                    "name": "HGTV",
+                    "homePage": "https://tv.apple.com/us/channel/hgtv/tvs.sbd.10520",
+                    "themeColorCode": "#4eabc1",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11860",
+                    "name": "Freeform",
+                    "homePage": "https://tv.apple.com/us/channel/freeform/tvs.sbd.11860",
+                    "themeColorCode": "#1981F5",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12521",
+                    "name": "Oxygen",
+                    "homePage": "https://tv.apple.com/us/channel/oxygen/tvs.sbd.12521",
+                    "themeColorCode": "#9A4BA0",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000120",
+                    "name": "FilmRise",
+                    "homePage": "https://tv.apple.com/us/channel/filmrise/tvs.sbd.1000120",
+                    "themeColorCode": "#c61d3a",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000185",
+                    "name": "MGM+",
+                    "homePage": "https://tv.apple.com/us/channel/mgm/tvs.sbd.1000185",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000408",
+                    "name": "discovery+",
+                    "homePage": "https://tv.apple.com/us/channel/discovery/tvs.sbd.1000408",
+                    "themeColorCode": "#121317",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10620",
+                    "name": "Bravo",
+                    "homePage": "https://tv.apple.com/us/channel/bravo/tvs.sbd.10620",
+                    "themeColorCode": "#679197",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11221",
+                    "name": "TBS",
+                    "homePage": "https://tv.apple.com/us/channel/tbs/tvs.sbd.11221",
+                    "themeColorCode": "#A93D78",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12305",
+                    "name": "Destination America GO",
+                    "homePage": "https://tv.apple.com/us/channel/destination-america-go/tvs.sbd.12305",
+                    "themeColorCode": "#1c2739",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000393",
+                    "name": "BET+",
+                    "homePage": "https://tv.apple.com/us/channel/bet/tvs.sbd.1000393",
+                    "themeColorCode": "#CC00CC",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000427",
+                    "name": "MagellanTV Documentaries",
+                    "homePage": "https://tv.apple.com/us/channel/magellantv-documentaries/tvs.sbd.1000427",
+                    "themeColorCode": "#0a1f2d",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000452",
+                    "name": "CBS",
+                    "homePage": "https://tv.apple.com/us/channel/cbs/tvs.sbd.1000452",
+                    "themeColorCode": "#040C35",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000511",
+                    "name": "Smithsonian Channel",
+                    "homePage": "https://tv.apple.com/us/channel/smithsonian-channel/tvs.sbd.1000511",
+                    "themeColorCode": "#DB2C2C",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000566",
+                    "name": "Max",
+                    "homePage": "https://tv.apple.com/us/channel/max/tvs.sbd.1000566",
+                    "themeColorCode": "#002BE7",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10680",
+                    "name": "USA",
+                    "homePage": "https://tv.apple.com/us/channel/usa/tvs.sbd.10680",
+                    "themeColorCode": "#FF3B30",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11582",
+                    "name": "Science Channel",
+                    "homePage": "https://tv.apple.com/us/channel/science-channel/tvs.sbd.11582",
+                    "themeColorCode": "#5c9cd4",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12304",
+                    "name": "AHC GO",
+                    "homePage": "https://tv.apple.com/us/channel/ahc-go/tvs.sbd.12304",
+                    "themeColorCode": "#1a4278",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000234",
+                    "name": "Noggin",
+                    "homePage": "https://tv.apple.com/us/channel/noggin/tvs.sbd.1000234",
+                    "themeColorCode": "#8E53DB",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000552",
+                    "name": "SkyShowtime",
+                    "homePage": "https://tv.apple.com/dk/channel/skyshowtime/tvs.sbd.1000552",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.1000552/light-theme.png",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.1000552/dark-theme.png",
+                        "whiteImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.1000552/white.png"
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10540",
+                    "name": "Sundance Now",
+                    "homePage": "https://tv.apple.com/us/channel/sundance-now/tvs.sbd.10540",
+                    "themeColorCode": "#1c2238",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11561",
+                    "name": "TLC",
+                    "homePage": "https://tv.apple.com/us/channel/tlc/tvs.sbd.11561",
+                    "themeColorCode": "#e81f2e",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11581",
+                    "name": "Investigation Discovery",
+                    "homePage": "https://tv.apple.com/us/channel/investigation-discovery/tvs.sbd.11581",
+                    "themeColorCode": "#F2231A",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000294",
+                    "name": "BritBox",
+                    "homePage": "https://tv.apple.com/us/channel/britbox/tvs.sbd.1000294",
+                    "themeColorCode": "#00202b",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000301",
+                    "name": "Eros Now Select",
+                    "homePage": "https://tv.apple.com/us/channel/eros-now-select/tvs.sbd.1000301",
+                    "themeColorCode": "#FF4013",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000303",
+                    "name": "NAT GEO TV",
+                    "homePage": "https://tv.apple.com/us/channel/nat-geo-tv/tvs.sbd.1000303",
+                    "themeColorCode": "#020202",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000516",
+                    "name": "SkyShowtime",
+                    "homePage": "https://tv.apple.com/dk/channel/skyshowtime/tvs.sbd.1000516",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10960",
+                    "name": "Hopster",
+                    "homePage": "https://tv.apple.com/us/channel/hopster/tvs.sbd.10960",
+                    "themeColorCode": "#ed2676",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11560",
+                    "name": "Discovery",
+                    "homePage": "https://tv.apple.com/us/channel/discovery/tvs.sbd.11560",
+                    "themeColorCode": "#1c6693",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.13270",
+                    "name": "Globoplay",
+                    "homePage": "https://tv.apple.com/us/channel/globoplay/tvs.sbd.13270",
+                    "themeColorCode": "#FB0234",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.9000",
+                    "name": "Netflix",
+                    "homePage": "https://tv.apple.com/us/channel/netflix/tvs.sbd.9000",
+                    "themeColorCode": "",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000379",
+                    "name": "Plex",
+                    "homePage": "https://tv.apple.com/us/channel/plex/tvs.sbd.1000379",
+                    "themeColorCode": "#282A2D",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000397",
+                    "name": "adult swim",
+                    "homePage": "https://tv.apple.com/us/channel/adult-swim/tvs.sbd.1000397",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10020",
+                    "name": "SHOWTIME",
+                    "homePage": "https://tv.apple.com/us/channel/showtime/tvs.sbd.10020",
+                    "themeColorCode": "#B10000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10600",
+                    "name": "Shudder",
+                    "homePage": "https://tv.apple.com/us/channel/shudder/tvs.sbd.10600",
+                    "themeColorCode": "#2F3D53",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000216",
+                    "name": "Disney+",
+                    "homePage": "https://tv.apple.com/dk/channel/disney/tvs.sbd.1000216",
+                    "themeColorCode": "#136878",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000244",
+                    "name": "Cinemax",
+                    "homePage": "https://tv.apple.com/us/channel/cinemax/tvs.sbd.1000244",
+                    "themeColorCode": "#EDAE41",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000569",
+                    "name": "Marquee TV",
+                    "homePage": "https://tv.apple.com/dk/channel/marquee-tv/tvs.sbd.1000569",
+                    "themeColorCode": "#ff87c3",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10060",
+                    "name": "FXNOW",
+                    "homePage": "https://tv.apple.com/us/channel/fxnow/tvs.sbd.10060",
+                    "themeColorCode": "#121212",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11160",
+                    "name": "Crunchyroll",
+                    "homePage": "https://tv.apple.com/us/channel/crunchyroll/tvs.sbd.11160",
+                    "themeColorCode": "#F47521",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12053",
+                    "name": "C More",
+                    "homePage": "https://tv.apple.com/dk/channel/c-more/tvs.sbd.12053",
+                    "themeColorCode": "#FF3334",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.12053/light-theme.png",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.12053/dark-theme.png",
+                        "whiteImage": "https://media.movieofthenight.com/services/apple/dk/addons/tvs.sbd.12053/white.png"
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10021",
+                    "name": "Showtime Anytime",
+                    "homePage": "https://tv.apple.com/us/channel/showtime-anytime/tvs.sbd.10021",
+                    "themeColorCode": "#B10000",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11220",
+                    "name": "TNT",
+                    "homePage": "https://tv.apple.com/us/channel/tnt/tvs.sbd.11220",
+                    "themeColorCode": "#232323",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.11320",
+                    "name": "CuriosityStream",
+                    "homePage": "https://tv.apple.com/us/channel/curiositystream/tvs.sbd.11320",
+                    "themeColorCode": "#EEA83D",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.1000503",
+                    "name": "Amazon Freevee",
+                    "homePage": "https://tv.apple.com/us/channel/amazon-freevee/tvs.sbd.1000503",
+                    "themeColorCode": "#32155A",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10200",
+                    "name": "STARZ",
+                    "homePage": "https://tv.apple.com/us/channel/starz/tvs.sbd.10200",
+                    "themeColorCode": "#333333",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10280",
+                    "name": "Travel Channel",
+                    "homePage": "https://tv.apple.com/us/channel/travel-channel/tvs.sbd.10280",
+                    "themeColorCode": "#242424",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.10304",
+                    "name": "Cooking Channel",
+                    "homePage": "https://tv.apple.com/us/channel/cooking-channel/tvs.sbd.10304",
+                    "themeColorCode": "#242424",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                },
+                {
+                    "id": "tvs.sbd.12306",
+                    "name": "Discovery Life GO",
+                    "homePage": "https://tv.apple.com/us/channel/discovery-life-go/tvs.sbd.12306",
+                    "themeColorCode": "#74a9d0",
+                    "imageSet": {
+                        "lightThemeImage": "",
+                        "darkThemeImage": "",
+                        "whiteImage": ""
+                    }
+                }
+            ]
+        },
+        {
+            "id": "mubi",
+            "name": "Mubi",
+            "homePage": "https://mubi.com",
+            "themeColorCode": "#001588",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/mubi/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/mubi/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/mubi/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        },
+        {
+            "id": "zee5",
+            "name": "Zee5",
+            "homePage": "https://www.zee5.com/global",
+            "themeColorCode": "#8230c6",
+            "imageSet": {
+                "lightThemeImage": "https://media.movieofthenight.com/services/zee5/logo-light-theme.svg",
+                "darkThemeImage": "https://media.movieofthenight.com/services/zee5/logo-dark-theme.svg",
+                "whiteImage": "https://media.movieofthenight.com/services/zee5/logo-white.svg"
+            },
+            "streamingOptionTypes": {
+                "addon": false,
+                "buy": false,
+                "rent": false,
+                "free": false,
+                "subscription": true
+            },
+            "addons": []
+        }
+    ]
+}
+
