@@ -1,6 +1,6 @@
 .mat-toolbar {
     background: transparent;
-    color: #efefef;
+    color: #303030;
 }
 
 .spacer {
@@ -12,6 +12,7 @@ a.home-link {
     text-decoration: none;
 
     .mat-icon {
+        margin-right: 8px;
         vertical-align: middle;
     }
 }

@@ -1,21 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-@import url(reset.scss);
-
 html, body { height: 100%; }
 body {
-    background: #1e1f23;
+    /*background: #000;
+    background-image: linear-gradient(to right bottom, #000000, #080808, #101010, #151515, #1a1a1a, #1b1b1b, #1b1b1b, #1c1c1c, #191919, #161616, #131313, #0f0f0f);
+    background-attachment: fixed;
+    background-repeat: no-repeat;*/
+
     margin: 0;;
+    //color: #efefef;
     font-family: Roboto, "Helvetica Neue", sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #fff;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        color: #222;
-    }
 }
