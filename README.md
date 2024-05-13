@@ -1,5 +1,12 @@
 # What To Stream Frontend
-An Angular web app for quick and easy recommendations of which movies or series to watch on streaming services with filters and sorting based on IMDB and meta score.
+*Work in progress*
+
+An Angular web app for quick and easy recommendations of what movies or series to watch on which streaming service with filters and sorting based on IMDB and meta score.
+
+## How to run
+A mock REST API server is included. Run the script `npm run json-server:start` to serve a demo database located in /mock-db/db.json.
+
+To test the app start the Angular dev server with the script `npm run start`.
 
 ## Requirement Specification
 - Filters
