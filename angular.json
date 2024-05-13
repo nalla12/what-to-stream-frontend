@@ -7,7 +7,6 @@
 			"projectType": "application",
 			"schematics": {
 				"@schematics/angular:component": {
-					"styleext": "scss",
 					"style": "scss"
 				}
 			},
@@ -31,7 +30,7 @@
 						],
 						"styles": [
 							"@angular/material/prebuilt-themes/purple-green.css",
-							"src/styles.scss"
+							"src/styles/styles.scss"
 						],
 						"scripts": []
 					},
