@@ -10,7 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
         MatFormFieldModule, MatInputModule, MatSelectModule
     ],
   templateUrl: './search.component.html',
-  styleUrl: './search.component.css'
+  styleUrl: './search.component.scss'
 })
 export class SearchComponent {
 }

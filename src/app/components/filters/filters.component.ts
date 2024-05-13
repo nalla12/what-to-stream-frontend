@@ -22,7 +22,7 @@ import {MatSlider, MatSliderThumb} from '@angular/material/slider';
         MatSliderThumb
     ],
     templateUrl: './filters.component.html',
-    styleUrl: './filters.component.css'
+    styleUrl: './filters.component.scss'
 })
 export class FiltersComponent implements OnInit {
     showType: string[] = SHOW_TYPES;

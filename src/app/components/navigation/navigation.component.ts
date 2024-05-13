@@ -13,7 +13,7 @@ import {DashboardComponent} from '../dashboard/dashboard.component';
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
-    styleUrl: './navigation.component.css',
+    styleUrl: './navigation.component.scss',
     standalone: true,
     imports: [
         MatToolbarModule,
