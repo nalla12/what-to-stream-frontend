@@ -4,7 +4,8 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 100%;
+    width: 30vw;
+    margin: auto;
 
     > * {
         margin: 0 auto;
@@ -21,5 +22,5 @@
     border-top: 1px #fff solid;
     height: 1px;
     width: 100%;
-    margin-bottom: 22px !important;
+    margin: 10px 0 32px 0 !important;
 }
