@@ -1,4 +1,5 @@
 import {Genre} from './genre';
+import {StreamingOptions} from './streaming-options';
 
 export interface Show {
     itemType: 'show';
@@ -51,6 +52,6 @@ export interface Show {
             w1440: string,
         },
     };
-    streamingOptions: streamingOption[];
-    seasons: season[];
+    streamingOptions: StreamingOptions;
+    // seasons: season[]; // only series TODO: add this interface
 }

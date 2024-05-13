@@ -1,9 +1,10 @@
 {
     "name": "what-to-stream-frontend",
-    "version": "0.0.0",
+    "version": "0.1.0",
     "scripts": {
         "ng": "ng",
         "start": "ng serve",
+        "json-server:start": "json-server --watch --port 3000 src/mock-db/db.json",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
         "test": "ng test"
@@ -37,6 +38,7 @@
         "karma-jasmine": "~5.1.0",
         "karma-jasmine-html-reporter": "~2.1.0",
         "sass": "^1.77.1",
+        "schematics-scss-migrate": "^2.3.17",
         "typescript": "~5.4.2"
     }
 }

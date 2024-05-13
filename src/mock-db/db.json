@@ -1,4 +1,214 @@
 {
+    "countries": {
+        "dk": {
+            "countryCode": "dk",
+            "name": "Denmark",
+            "services": [
+                {
+                    "id": "netflix",
+                    "name": "Netflix",
+                    "homePage": "https://www.netflix.com",
+                    "themeColorCode": "#E50914",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/netflix/logo-light-theme.svg",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/netflix/logo-dark-theme.svg",
+                        "whiteImage": "https://media.movieofthenight.com/services/netflix/logo-white.svg"
+                    },
+                    "streamingOptionTypes": {
+                        "addon": false,
+                        "buy": false,
+                        "rent": false,
+                        "free": false,
+                        "subscription": true
+                    },
+                    "addons": []
+                },
+                {
+                    "id": "prime",
+                    "name": "Prime Video",
+                    "homePage": "https://www.primevideo.com",
+                    "themeColorCode": "#00A8E1",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/prime/logo-light-theme.svg",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/prime/logo-dark-theme.svg",
+                        "whiteImage": "https://media.movieofthenight.com/services/prime/logo-white.svg"
+                    },
+                    "streamingOptionTypes": {
+                        "addon": false,
+                        "buy": false,
+                        "rent": false,
+                        "free": false,
+                        "subscription": true
+                    },
+                    "addons": []
+                },
+                {
+                    "id": "disney",
+                    "name": "Disney+",
+                    "homePage": "https://www.disneyplus.com/",
+                    "themeColorCode": "#01137c",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/disney/logo-light-theme.svg",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/disney/logo-dark-theme.svg",
+                        "whiteImage": "https://media.movieofthenight.com/services/disney/logo-white.svg"
+                    },
+                    "streamingOptionTypes": {
+                        "addon": false,
+                        "buy": false,
+                        "rent": false,
+                        "free": false,
+                        "subscription": true
+                    },
+                    "addons": []
+                },
+                {
+                    "id": "hbo",
+                    "name": "HBO Max",
+                    "homePage": "https://play.hbomax.com/",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/hbo/logo-light-theme.svg",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/hbo/logo-dark-theme.svg",
+                        "whiteImage": "https://media.movieofthenight.com/services/hbo/logo-white.svg"
+                    },
+                    "streamingOptionTypes": {
+                        "addon": false,
+                        "buy": false,
+                        "rent": false,
+                        "free": false,
+                        "subscription": true
+                    },
+                    "addons": []
+                },
+                {
+                    "id": "apple",
+                    "name": "Apple TV",
+                    "homePage": "https://tv.apple.com/dk",
+                    "themeColorCode": "#000000",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/apple/logo-light-theme.svg",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/apple/logo-dark-theme.svg",
+                        "whiteImage": "https://media.movieofthenight.com/services/apple/logo-white.svg"
+                    },
+                    "streamingOptionTypes": {
+                        "addon": true,
+                        "buy": true,
+                        "rent": true,
+                        "free": false,
+                        "subscription": true
+                    },
+                    "addons": []
+                },
+                {
+                    "id": "mubi",
+                    "name": "Mubi",
+                    "homePage": "https://mubi.com",
+                    "themeColorCode": "#001588",
+                    "imageSet": {
+                        "lightThemeImage": "https://media.movieofthenight.com/services/mubi/logo-light-theme.svg",
+                        "darkThemeImage": "https://media.movieofthenight.com/services/mubi/logo-dark-theme.svg",
+                        "whiteImage": "https://media.movieofthenight.com/services/mubi/logo-white.svg"
+                    },
+                    "streamingOptionTypes": {
+                        "addon": false,
+                        "buy": false,
+                        "rent": false,
+                        "free": false,
+                        "subscription": true
+                    },
+                    "addons": []
+                }
+            ]
+        }
+    },
+
+    "genres": [
+        {
+            "id": "action",
+            "name": "Action"
+        },
+        {
+            "id": "adventure",
+            "name": "Adventure"
+        },
+        {
+            "id": "animation",
+            "name": "Animation"
+        },
+        {
+            "id": "comedy",
+            "name": "Comedy"
+        },
+        {
+            "id": "crime",
+            "name": "Crime"
+        },
+        {
+            "id": "documentary",
+            "name": "Documentary"
+        },
+        {
+            "id": "drama",
+            "name": "Drama"
+        },
+        {
+            "id": "family",
+            "name": "Family"
+        },
+        {
+            "id": "fantasy",
+            "name": "Fantasy"
+        },
+        {
+            "id": "history",
+            "name": "History"
+        },
+        {
+            "id": "horror",
+            "name": "Horror"
+        },
+        {
+            "id": "music",
+            "name": "Music"
+        },
+        {
+            "id": "mystery",
+            "name": "Mystery"
+        },
+        {
+            "id": "news",
+            "name": "News"
+        },
+        {
+            "id": "reality",
+            "name": "Reality"
+        },
+        {
+            "id": "romance",
+            "name": "Romance"
+        },
+        {
+            "id": "scifi",
+            "name": "Science Fiction"
+        },
+        {
+            "id": "talk",
+            "name": "Talk Show"
+        },
+        {
+            "id": "thriller",
+            "name": "Thriller"
+        },
+        {
+            "id": "war",
+            "name": "War"
+        },
+        {
+            "id": "western",
+            "name": "Western"
+        }
+    ],
+
     "shows": [
         {
             "itemType": "show",

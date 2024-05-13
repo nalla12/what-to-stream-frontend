@@ -1,3 +1,14 @@
+<mat-form-field>
+    <mat-label>Country</mat-label>
+    <mat-select multiple
+                aria-label="Country"
+                #select="matSelect"
+                (selectionChange)="onGenreChange(select.value)"
+    >
+        <mat-option>Denmark</mat-option>
+    </mat-select>
+</mat-form-field>
+
 <mat-button-toggle-group
     name="show-type"
     aria-label="Show Type"
