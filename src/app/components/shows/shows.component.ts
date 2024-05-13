@@ -2,9 +2,9 @@ import {Component, inject} from '@angular/core';
 import {ShowsService} from '../../services/shows.service';
 import {Show} from '../../interfaces/show';
 import {MatGridList, MatGridTile} from '@angular/material/grid-list';
-import {GENRES} from '../../constants';
 import {MatOption} from '@angular/material/autocomplete';
 import {MatCardModule} from '@angular/material/card';
+import {Genre} from '../../interfaces/genre';
 
 @Component({
     selector: 'app-shows',
@@ -28,5 +28,7 @@ export class ShowsComponent {
         })
     }
 
-    protected readonly genres = GENRES;
+    getGenresString(genres: Genre[]): string {
+        return genres.map(genre => genre.name).join(', ');
+    }
 }
