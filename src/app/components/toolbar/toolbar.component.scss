@@ -6,3 +6,12 @@
 .spacer {
     flex: 1 1 auto;
 }
+
+a.home-link {
+    color: inherit;
+    text-decoration: none;
+
+    .mat-icon {
+        vertical-align: middle;
+    }
+}
