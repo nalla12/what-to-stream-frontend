@@ -11,7 +11,7 @@ To test the app start the Angular dev server with the script `npm run start`.
 ## Requirement Specification
 - Filters
   - Save different presets (to localStorage)
-  - Toggle category: movies or TV series/TV shows
+  - Toggle show type: movies or TV series
   - Choose country
     - Automatic detection based on IP address location
   - Genre
