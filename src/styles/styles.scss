@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* Variables */
+:root {
+    --primary-color: #673ab7;
+}
+
+/* General */
 html, body { height: 100%; }
 body {
     /*background: #000;
@@ -6,9 +11,27 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;*/
 
-    margin: 0;;
     //color: #efefef;
     font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Override Material Components Defaults */
+.mat-app-background {
+    background: #e4e4e4;
+}
+
+mat-button-toggle.mat-button-toggle-appearance-standard {
+    background: whitesmoke;
+
+    &.mat-button-toggle-checked {
+        //background-color: #b78fe1;
+        background-color: var(--primary-color);
+        color: whitesmoke;
+
+        .mat-pseudo-checkbox {
+            --mat-minimal-pseudo-checkbox-selected-checkmark-color: whitesmoke;
+        }
+    }
 }
 
 mat-bottom-sheet-container.mat-bottom-sheet-container {
