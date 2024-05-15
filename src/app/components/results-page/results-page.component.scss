@@ -9,6 +9,11 @@
         width: 100%;
         max-width: 320px;
         padding: 40px 0 40px 40px;
+
+        > .wrapper {
+            position: sticky;
+            top: 30px;
+        }
     }
 
     > .main-content {
