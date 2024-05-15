@@ -1,10 +1,23 @@
 <div class="flex-container">
-    <div class="sidebar">
-        <app-search/>
-        <div class="divider"></div>
-        <app-filters/>
-    </div>
+    @if (!isSmallScreen) {
+        <div class="sidebar">
+            <app-search/>
+            <app-filters/>
+        </div>
+    }
+
     <div class="main-content">
         <app-filtered-shows/>
     </div>
 </div>
+
+@if (isSmallScreen) {
+    <div class="floating-btn-container">
+        <button mat-raised-button color="accent" class="open-bottom-sheet-btn"
+                aria-label="Show filters" (click)="openBottomSheet()"
+        >
+            <mat-icon>filter_list</mat-icon>
+            Show Filters
+        </button>
+    </div>
+}
