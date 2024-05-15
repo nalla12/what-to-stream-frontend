@@ -10,3 +10,9 @@ body {
     //color: #efefef;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+mat-bottom-sheet-container.mat-bottom-sheet-container {
+    min-width: auto;
+    border-radius: 18px 18px 0 0;
+    padding: 24px;
+}

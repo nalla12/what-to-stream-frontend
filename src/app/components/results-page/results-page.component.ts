@@ -5,6 +5,8 @@ import {SearchComponent} from '../search/search.component';
 import {FilteredShowsComponent} from '../filtered-shows/filtered-shows.component';
 import {MatIconModule} from '@angular/material/icon';
 import {ViewportRuler} from '@angular/cdk/overlay';
+import {MatBottomSheet, MatBottomSheetModule} from '@angular/material/bottom-sheet';
+import {FiltersBottomSheetComponent} from '../filters-bottom-sheet/filters-bottom-sheet.component';
 
 @Component({
     selector: 'app-results-page',
@@ -14,17 +16,18 @@ import {ViewportRuler} from '@angular/cdk/overlay';
         SearchComponent,
         FilteredShowsComponent,
         MatButtonModule,
-        MatIconModule
+        MatIconModule,
+        MatBottomSheetModule
     ],
     templateUrl: './results-page.component.html',
     styleUrl: './results-page.component.scss'
 })
 export class ResultsPageComponent implements OnDestroy{
-    showBottomSheet: boolean = window.innerWidth < 768;
     isSmallScreen: boolean = true;
-    private readonly viewportRuler: ViewportRuler = inject(ViewportRuler);
-    private readonly ngZone: NgZone = inject(NgZone);
-    private readonly viewportChange = this.viewportRuler
+    private _bottomSheet: MatBottomSheet = inject(MatBottomSheet);
+    readonly viewportRuler: ViewportRuler = inject(ViewportRuler);
+    readonly ngZone: NgZone = inject(NgZone);
+    readonly viewportChange = this.viewportRuler
         .change(200)
         .subscribe(() => this.ngZone.run(() => this.setSize()));
 
@@ -34,16 +37,12 @@ export class ResultsPageComponent implements OnDestroy{
 
     private setSize() {
         const { width } = this.viewportRuler.getViewportSize();
-
-        if (width < 769) {
-            this.isSmallScreen = true;
-        } else {
-            this.isSmallScreen = false;
-        }
+        this.isSmallScreen = width < 769;
     }
 
-    openBottomSheet() {
-        console.log('clicked')
+    openBottomSheet(): void {
+        console.log('clicked');
+        this._bottomSheet.open(FiltersBottomSheetComponent);
     }
 
     ngOnDestroy() {
