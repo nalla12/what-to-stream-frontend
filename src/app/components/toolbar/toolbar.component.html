@@ -1,17 +1,10 @@
-<div>
-    <mat-toolbar>
-        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-            <mat-icon>menu</mat-icon>
-        </button>
-        <span>Filters</span>
+<mat-toolbar>
+    <span class="spacer"></span>
 
-        <span class="spacer"></span>
+    <a [routerLink]="['/']" class="home-link">
+        <mat-icon svgIcon="tv" aria-label="TV icon" aria-hidden="true"></mat-icon>
+        <span class="page-title">What To Stream</span>
+    </a>
 
-        <a [routerLink]="['/']" class="home-link">
-            <mat-icon svgIcon="tv" aria-label="TV icon" aria-hidden="true"></mat-icon>
-            <span class="page-title">What To Stream</span>
-        </a>
-
-        <span class="spacer"></span>
-    </mat-toolbar>
-</div>
+    <span class="spacer"></span>
+</mat-toolbar>
