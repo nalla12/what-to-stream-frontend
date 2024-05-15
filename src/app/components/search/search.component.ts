@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, WritableSignal} from '@angular/core';
 import {MatSelectModule} from '@angular/material/select';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -16,6 +16,11 @@ import {FilterService} from '../../services/filter.service';
 export class SearchComponent {
     private filterService: FilterService = inject(FilterService);
     private timeoutId: number = 0;
+    title: WritableSignal<string>;
+
+    constructor() {
+        this.title = this.filterService.title
+    }
 
     search(val: string): void {
         clearTimeout(this.timeoutId);

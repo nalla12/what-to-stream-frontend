@@ -1,4 +1,6 @@
 <mat-form-field style="width: 100%">
     <mat-label>Title</mat-label>
-    <input matInput #searchField (input)="search(searchField.value)"/>
+    <input matInput #searchField
+           [value]="title()"
+           (input)="search(searchField.value)"/>
 </mat-form-field>

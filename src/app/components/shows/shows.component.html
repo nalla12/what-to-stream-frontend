@@ -1,9 +1,9 @@
 <div class="responsive-grid">
-    @if (!showsList.length) {
+    @if (!showsList || !showsList.length) {
         <p>No results 😔</p>
     }
 
-    @for (show of filteredShowsList(); track show) {
+    @for (show of showsList; track show) {
         <div>
             <mat-card>
                 <mat-card-header>
