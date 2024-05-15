@@ -3,6 +3,7 @@ import {MatIconButton} from '@angular/material/button';
 import {MatToolbar} from '@angular/material/toolbar';
 import {MatIconModule, MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
+import {RouterLink} from '@angular/router';
 
 @Component({
     selector: 'app-toolbar',
@@ -10,7 +11,8 @@ import {DomSanitizer} from '@angular/platform-browser';
     imports: [
         MatIconModule,
         MatIconButton,
-        MatToolbar
+        MatToolbar,
+        RouterLink
     ],
     templateUrl: './toolbar.component.html',
     styleUrl: './toolbar.component.scss'
