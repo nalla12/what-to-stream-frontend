@@ -13,15 +13,12 @@ export class ShowsService {
     private showsUrl = environment.apiUrl + 'shows';
 
     constructor(private http: HttpClient, private messageService: MessageService) {
-        console.log('shows service');
     }
 
     /** GET all shows */
     getShows(): Observable<Show[]> {
-        console.log('getShows!');
         return this.http.get<Show[]>(this.showsUrl) // load from the mock server
             .pipe(
-                tap(_ => this.log('fetched all shows')),
                 map((response) => response),
                 catchError(this.handleError<Show[]>('getShows', []))
             );
@@ -30,7 +27,6 @@ export class ShowsService {
     getShowById(id: number): Observable<Show> {
         return this.http.get<Show>(`${this.showsUrl}/${id}`)
             .pipe(
-                tap(x => console.log(x)),
                 catchError(this.handleError<Show>('getShowById'))
             );
     }

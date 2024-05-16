@@ -1,12 +1,12 @@
-import {Component, inject, OnInit} from '@angular/core';
+import {Component, inject, NgZone, OnDestroy, OnInit} from '@angular/core';
 import {ShowsService} from '../../services/shows.service';
 import {Show} from '../../interfaces/show';
 import {ActivatedRoute} from '@angular/router';
 import {NgStyle, TitleCasePipe} from '@angular/common';
-import {genresAsString} from '../../utils';
 import {StreamingOption} from '../../interfaces/streaming-option';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {ViewportRuler} from '@angular/cdk/overlay';
 
 @Component({
     selector: 'app-show-details-page',
@@ -20,15 +20,26 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     templateUrl: './show-details-page.component.html',
     styleUrl: './show-details-page.component.scss'
 })
-export class ShowDetailsPageComponent implements OnInit {
+export class ShowDetailsPageComponent implements OnInit, OnDestroy {
     private route: ActivatedRoute = inject(ActivatedRoute);
     private showsService: ShowsService = inject(ShowsService);
     show: Show | undefined;
     availableWithSub: StreamingOption[] = [];
     availableToBuy: StreamingOption[] = [];
     availableToRent: StreamingOption[] = [];
+    posterUrl: string = '';
 
-    protected readonly genresAsString = genresAsString;
+    // Detect if screen is small
+    isSmallScreen: boolean = true; // TODO: detect orientation instead
+    readonly viewportRuler: ViewportRuler = inject(ViewportRuler);
+    readonly ngZone: NgZone = inject(NgZone);
+    readonly viewportChange = this.viewportRuler
+        .change(300)
+        .subscribe(() => this.ngZone.run(() => this.setSize()));
+
+    constructor() {
+        this.setSize();
+    }
 
     getShow(): void {
         const routeId = Number(this.route.snapshot.paramMap.get('id'));
@@ -46,7 +57,27 @@ export class ShowDetailsPageComponent implements OnInit {
                         this.availableToRent.push(option)
                     }
                 })
+
+                if (this.isSmallScreen && this.show) {
+                    this.posterUrl = this.show.imageSet.verticalPoster.w720;
+                } else if (!this.isSmallScreen && this.show) {
+                    this.posterUrl = this.show.imageSet.horizontalPoster.w1080;
+                }
             });
+    }
+
+    private setSize() {
+        const { width } = this.viewportRuler.getViewportSize();
+        this.isSmallScreen = width < 769;
+        if (this.isSmallScreen && this.show) {
+            this.posterUrl = this.show.imageSet.verticalPoster.w720;
+        } else if (!this.isSmallScreen && this.show) {
+            this.posterUrl = this.show.imageSet.horizontalPoster.w1080;
+        }
+    }
+
+    ngOnDestroy() {
+        this.viewportChange.unsubscribe();
     }
 
     ngOnInit() {
