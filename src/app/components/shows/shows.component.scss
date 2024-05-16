@@ -15,7 +15,7 @@
         height: 100%;
 
         mat-card-header {
-            flex-grow: 1;
+            flex: 1;
             padding-bottom: 16px;
         }
     }
@@ -26,7 +26,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
 
 @media screen and (min-width: 768px) {
     .responsive-grid {
@@ -49,5 +48,16 @@
 @media screen and (min-width: 1536px) {
     .responsive-grid {
         grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.show-card {
+    &:hover {
+        box-shadow: rgba(79, 6, 200, 0.45) 0 2px 24px;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
     }
 }

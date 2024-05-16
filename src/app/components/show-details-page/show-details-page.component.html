@@ -1,0 +1,67 @@
+@if (show) {
+    <div class="container" [ngStyle]="{
+        'background': 'transparent url(' + posterUrl + ') no-repeat center top',
+        'background-size': 'cover'
+    }">
+        <div class="text-box">
+            <h1>{{ show.title }}</h1>
+
+            <p>{{ show.releaseYear }}, {{show.showType | titlecase}}</p>
+<!--            <p>{{ genresAsString(show.genres) }}</p>-->
+            <mat-chip-set aria-label="Genres" style="font-size: 1.2rem; margin-bottom: 10px">
+                @for (genre of show.genres; track genre) {
+                    <mat-chip>{{genre.name | titlecase}}</mat-chip>
+                }
+            </mat-chip-set>
+
+            <p class="small-text">Meta Rating:</p>
+            <div class="rating-wrapper">
+                <mat-progress-spinner
+                    class="example-margin"
+                    mode="determinate"
+                    diameter="38"
+                    value="{{show.rating}}">
+                </mat-progress-spinner>
+                <p class="rating-num">{{show.rating}}</p>
+            </div>
+
+            @if (availableWithSub.length) {
+                <p class="small-text">Available on:</p>
+                <p>
+                    @for (option of availableWithSub; track option) {
+                        <img class="service-logo"
+                             alt="{{option.service.name}}"
+                             title="{{option.service.name}}"
+                             src="{{option.service.imageSet.lightThemeImage}}"
+                        />
+                    <!-- TODO: make it a link to where to watch-->
+                    }
+                </p>
+            }
+            @if (availableToBuy.length) {
+                <p class="small-text">Buy on:</p>
+                <p>
+                    @for (option of availableToBuy; track option) {
+                        <img class="service-logo"
+                             alt="{{option.service.name}}"
+                             title="{{option.service.name}}"
+                             src="{{option.service.imageSet.lightThemeImage}}"
+                        />
+                    }
+                </p>
+            }
+            @if (availableToRent.length) {
+                <p class="small-text">Rent on:</p>
+                <p>
+                    @for (option of availableToRent; track option) {
+                        <img class="service-logo"
+                             alt="{{option.service.name}}"
+                             title="{{option.service.name}}"
+                             src="{{option.service.imageSet.lightThemeImage}}"
+                        />
+                    }
+                </p>
+            }
+        </div>
+    </div>
+}

@@ -13,17 +13,21 @@ export class ShowsService {
     private showsUrl = environment.apiUrl + 'shows';
 
     constructor(private http: HttpClient, private messageService: MessageService) {
-        console.log('shows service');
     }
 
     /** GET all shows */
     getShows(): Observable<Show[]> {
-        console.log('getShows!');
         return this.http.get<Show[]>(this.showsUrl) // load from the mock server
             .pipe(
-                tap(_ => this.log('fetched shows')),
                 map((response) => response),
                 catchError(this.handleError<Show[]>('getShows', []))
+            );
+    }
+
+    getShowById(id: number): Observable<Show> {
+        return this.http.get<Show>(`${this.showsUrl}/${id}`)
+            .pipe(
+                catchError(this.handleError<Show>('getShowById'))
             );
     }
 
@@ -53,8 +57,7 @@ export class ShowsService {
     private handleError<T>(operation = 'operation', result?: T) {
         return (error: any): Observable<T> => {
 
-            // TODO: send the error to remote logging infrastructure
-            console.error(error); // log to console instead
+            console.error(error);
 
             // TODO: better job of transforming error for user consumption
             this.log(`${operation} failed: ${error.message}`);

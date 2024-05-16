@@ -3,7 +3,8 @@ import {Show} from '../../interfaces/show';
 import {MatGridList, MatGridTile} from '@angular/material/grid-list';
 import {MatOption} from '@angular/material/autocomplete';
 import {MatCardModule} from '@angular/material/card';
-import {Genre} from '../../interfaces/genre';
+import {RouterLink} from '@angular/router';
+import {genresAsString} from '../../utils';
 
 @Component({
     selector: 'app-shows',
@@ -12,15 +13,13 @@ import {Genre} from '../../interfaces/genre';
         MatGridList,
         MatGridTile,
         MatOption,
-        MatCardModule
+        MatCardModule,
+        RouterLink
     ],
     templateUrl: './shows.component.html',
     styleUrl: './shows.component.scss'
 })
 export class ShowsComponent {
     @Input() showsList: Show[] | undefined;
-
-    genresAsString(genres: Genre[]): string {
-        return genres.map(genre => genre.name).join(', ');
-    }
+    protected readonly genresAsString = genresAsString;
 }
