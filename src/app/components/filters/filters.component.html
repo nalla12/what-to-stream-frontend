@@ -35,14 +35,14 @@
 </mat-form-field>
 
 <div class="imdb-score-label-container">
-    <label class="imdb-score-label">IMDB Score</label>
+    <label class="imdb-score-label">Meta Rating</label>
     <label class="imdb-score-value-label">{{slider.value}}</label>
 </div>
 <mat-slider
-    [max]="imdbScore.max"
-    [min]="imdbScore.min"
-    [step]="imdbScore.step"
-    [discrete]="imdbScore.thumbLabel"
-    [showTickMarks]="imdbScore.showTicks">
-    <input #slider matSliderThumb [value]="imdbScore.value">
+    [max]="rating.max"
+    [min]="rating.min"
+    [step]="rating.step"
+    [discrete]="rating.thumbLabel"
+    [showTickMarks]="rating.showTicks">
+    <input #slider matSliderThumb [value]="rating.value">
 </mat-slider>

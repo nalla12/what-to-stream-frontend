@@ -29,13 +29,13 @@ export class FiltersComponent implements OnInit {
     genres: string[] = GENRES;
     selectedGenre: string = '';
     selectedShowType: string = '';
-    imdbScore = {
-        max: 10,
+    rating = {
+        max: 100,
         min: 1,
         showTicks: false,
         step: 1,
         thumbLabel: true,
-        value: 7,
+        value: 70,
     }
 
     ngOnInit(){
