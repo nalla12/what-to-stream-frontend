@@ -1,27 +1,35 @@
 @if (show) {
     <div class="container" [ngStyle]="{
-    'background': 'transparent url(' + show.imageSet.horizontalPoster.w1080 + ') no-repeat center top',
+        'background': 'transparent url(' + show.imageSet.horizontalPoster.w1080 + ') no-repeat center top',
         'background-size': 'cover'
     }">
-<!--    <img class="hero-image" src="{{show.imageSet.horizontalPoster.w1080}}"/>-->
         <div class="text-box">
             <h1>{{ show.title }}</h1>
-            <p>{{ show.releaseYear }}, {{ genresAsString(show.genres) }}</p>
+
+            <p>{{ show.releaseYear }}, {{show.showType | titlecase}}</p>
+<!--            <p>{{ genresAsString(show.genres) }}</p>-->
+            <mat-chip-set aria-label="Genres" style="font-size: 1.2rem; margin-bottom: 10px">
+                @for (genre of show.genres; track genre) {
+                    <mat-chip>{{genre.name | titlecase}}</mat-chip>
+                }
+            </mat-chip-set>
 
             @if (availableWithSub.length) {
-                <p>Available on:
+                <p class="small-text">Available on:</p>
+                <p>
                     @for (option of availableWithSub; track option) {
                         <img class="service-logo"
                              alt="{{option.service.name}}"
                              title="{{option.service.name}}"
                              src="{{option.service.imageSet.lightThemeImage}}"
                         />
-<!--                        TODO: make it a link to where to watch-->
+                    <!-- TODO: make it a link to where to watch-->
                     }
                 </p>
             }
             @if (availableToBuy.length) {
-                <p>Buy on:
+                <p class="small-text">Buy on:</p>
+                <p>
                     @for (option of availableToBuy; track option) {
                         <img class="service-logo"
                              alt="{{option.service.name}}"
@@ -32,7 +40,8 @@
                 </p>
             }
             @if (availableToRent.length) {
-                <p>Rent on:
+                <p class="small-text">Rent on:</p>
+                <p>
                     @for (option of availableToRent; track option) {
                         <img class="service-logo"
                              alt="{{option.service.name}}"

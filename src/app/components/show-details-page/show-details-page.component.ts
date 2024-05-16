@@ -2,15 +2,18 @@ import {Component, inject, OnInit} from '@angular/core';
 import {ShowsService} from '../../services/shows.service';
 import {Show} from '../../interfaces/show';
 import {ActivatedRoute} from '@angular/router';
-import {NgStyle} from '@angular/common';
+import {NgStyle, TitleCasePipe} from '@angular/common';
 import {genresAsString} from '../../utils';
 import {StreamingOption} from '../../interfaces/streaming-option';
+import {MatChipsModule} from '@angular/material/chips';
 
 @Component({
     selector: 'app-show-details-page',
     standalone: true,
     imports: [
-        NgStyle
+        NgStyle,
+        TitleCasePipe,
+        MatChipsModule
     ],
     templateUrl: './show-details-page.component.html',
     styleUrl: './show-details-page.component.scss'
