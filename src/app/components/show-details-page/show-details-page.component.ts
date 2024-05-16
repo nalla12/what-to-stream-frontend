@@ -6,6 +6,7 @@ import {NgStyle, TitleCasePipe} from '@angular/common';
 import {genresAsString} from '../../utils';
 import {StreamingOption} from '../../interfaces/streaming-option';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @Component({
     selector: 'app-show-details-page',
@@ -13,7 +14,8 @@ import {MatChipsModule} from '@angular/material/chips';
     imports: [
         NgStyle,
         TitleCasePipe,
-        MatChipsModule
+        MatChipsModule,
+        MatProgressSpinnerModule
     ],
     templateUrl: './show-details-page.component.html',
     styleUrl: './show-details-page.component.scss'

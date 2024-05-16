@@ -14,6 +14,17 @@
                 }
             </mat-chip-set>
 
+            <p class="small-text">Meta Rating:</p>
+            <div class="rating-wrapper">
+                <mat-progress-spinner
+                    class="example-margin"
+                    mode="determinate"
+                    diameter="38"
+                    value="{{show.rating}}">
+                </mat-progress-spinner>
+                <p class="rating-num">{{show.rating}}</p>
+            </div>
+
             @if (availableWithSub.length) {
                 <p class="small-text">Available on:</p>
                 <p>
