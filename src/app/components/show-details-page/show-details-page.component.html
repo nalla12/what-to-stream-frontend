@@ -1,1 +1,47 @@
-<div></div>
+@if (show) {
+    <div class="container" [ngStyle]="{
+    'background': 'transparent url(' + show.imageSet.horizontalPoster.w1080 + ') no-repeat center top',
+        'background-size': 'cover'
+    }">
+<!--    <img class="hero-image" src="{{show.imageSet.horizontalPoster.w1080}}"/>-->
+        <div class="text-box">
+            <h1>{{ show.title }}</h1>
+            <p>{{ show.releaseYear }}, {{ genresAsString(show.genres) }}</p>
+
+            @if (availableWithSub.length) {
+                <p>Available on:
+                    @for (option of availableWithSub; track option) {
+                        <img class="service-logo"
+                             alt="{{option.service.name}}"
+                             title="{{option.service.name}}"
+                             src="{{option.service.imageSet.lightThemeImage}}"
+                        />
+<!--                        TODO: make it a link to where to watch-->
+                    }
+                </p>
+            }
+            @if (availableToBuy.length) {
+                <p>Buy on:
+                    @for (option of availableToBuy; track option) {
+                        <img class="service-logo"
+                             alt="{{option.service.name}}"
+                             title="{{option.service.name}}"
+                             src="{{option.service.imageSet.lightThemeImage}}"
+                        />
+                    }
+                </p>
+            }
+            @if (availableToRent.length) {
+                <p>Rent on:
+                    @for (option of availableToRent; track option) {
+                        <img class="service-logo"
+                             alt="{{option.service.name}}"
+                             title="{{option.service.name}}"
+                             src="{{option.service.imageSet.lightThemeImage}}"
+                        />
+                    }
+                </p>
+            }
+        </div>
+    </div>
+}
